@@ -1,5 +1,6 @@
 $(document).ready(() => {
     $("#submitBtn").on('click', function(event){
+        console.log("it worked up to here")
         event.preventDefault();
         let input = {
             name: $("#name").val().trim(),
@@ -17,10 +18,10 @@ $(document).ready(() => {
                 $("q10").val().trim()
             ]
         };
-        $.post("/api/friends", input) .done(function(data){
+        $.post("/api/friends", input).done(function(data){
             $("#matchName").html(data.name);
             $("#matchImg").attr("src",data.image);
-            $("modal").modal("show");
+            $("modal").modal();
         })
     })
 })

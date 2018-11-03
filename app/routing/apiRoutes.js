@@ -1,9 +1,7 @@
-//Dependencies
-const path = require("path");
 // Setting list of friends to a variable
 let friendsList = require("../data/friends.js");
 //Export module of the routes for the api's
-module.exports = function(app){
+module.exports = function(app) {
     //retrieves list of friends
     app.get("/api/friends", function (req, res) {
         res.json(friendsList);
@@ -14,8 +12,6 @@ module.exports = function(app){
         let input = req.body;
         let scores = input.scores;
         let scoresArr = [];
-        let name = '';
-        let image = '';
         let bestMatch = 0;
         //cycle through each friend in the list of friend data
         for(let i =0; i < friendsList.length; i++){
@@ -40,6 +36,5 @@ module.exports = function(app){
 
         //pushes the newest friend into the friends list data array
         friendsList.push(req.body);
-
     });
 };
