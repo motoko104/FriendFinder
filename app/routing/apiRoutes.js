@@ -32,9 +32,10 @@ module.exports = function(app) {
         }
         //returns the best match generated
         let newFriend = friendsList[bestMatch];
+        console.log(newFriend);
         res.json(newFriend);
 
         //pushes the newest friend into the friends list data array
-        friendsList.push(req.body);
+        friendsList.push(input);
     });
 };

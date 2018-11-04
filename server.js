@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3040;
 //Express set up to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
+app.use(bodyParser.text());
+
+app.use(express.static('app/public'));
 
 //Router
 require('./app/routing/htmlRoutes.js')(app);
