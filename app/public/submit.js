@@ -1,11 +1,10 @@
-$(document).ready(() => {
-    $("#submitBtn").on('click', function(event){
-        console.log("it worked up to here")
+$(document).ready(function () {
+    $(".submit").on('click', function (event) {
         event.preventDefault();
         let input = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
-            scores:[
+            scores: [
                 $("#q1").val().trim(),
                 $("#q2").val().trim(),
                 $("#q3").val().trim(),
@@ -19,12 +18,12 @@ $(document).ready(() => {
             ]
         };
 
-        let currentURL = window.location.origin;
+        console.log(input);
 
-        $.post(currentURL + "/api/friends", input, function(data){
-            $("#matchName").html(data.name);
+        $.post("/api/friends", input, function (data) {
+            $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.image);
             $("#modalRes").modal('toggle');
-        })
-    })
-})
+        });
+    });
+});

@@ -1,14 +1,18 @@
+let path = require("path");
 // Setting list of friends to a variable
 let friendsList = require("../data/friends.js");
 //Export module of the routes for the api's
 module.exports = function(app) {
     //retrieves list of friends
     app.get("/api/friends", function (req, res) {
+        console.log(friendsList);
         res.json(friendsList);
+        console.log("only the get has happened");
     });
     //adds a new friend to the list
     app.post("/api/friends", function (req, res){
         //variables
+        console.log("we can at least get here");
         let input = req.body;
         let scores = input.scores;
         let scoresArr = [];
