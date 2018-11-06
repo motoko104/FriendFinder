@@ -1,3 +1,57 @@
+
 .aboutYou , .questions {
-    margin: 20px 300px 20px 50px;
+    margin: 20px 300px 20px 125px;
+    font-family: 'Inder', sans-serif;
+}
+.Title {
+    color: #f880b0;
+}
+.jumbotron{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.lead{
+    color: #f8c0d8;
+}
+.btn-primary{
+    background-color: #dba6eb;
+    border-color: #bc89cc;
+    color: #203060;
+}
+.btn-primary:hover{
+    background-color: #aa6fbd;
+    border-color: #8f4ca5;
+}
+.link{
+    color: #203060;
+
+}
+.input-group{
+    width: 300px;
+}
+h3, h2{
+    color: #203060;
+}
+.btn-block{
+    width: 30%;
+    margin: 20px 300px 20px 125px;
+}
+option, .input-group-text{
+    background-color: #f1d4fa;
+    color: #203060;
+}
+.close{
+    background-color: #dba6eb;
+    border-color: #bc89cc;
+    color: #203060;
+}
+.close:hover{
+    background-color: #aa6fbd;
+    border-color: #8f4ca5;
+}
+.modal-header, #matchName, .modalFoot{
+    color: #203060;
+    margin: 0px auto;
+    text-align: center;
 }

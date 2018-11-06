@@ -22,8 +22,22 @@ $(document).ready(function () {
 
         $.post("/api/friends", input, function (data) {
             $("#matchName").text(data.name);
-            $("#matchImg").attr("src", data.image);
+            $("#matchImg").attr("src", data.photo);
             $("#modalRes").modal('toggle');
         });
+
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+
     });
 });

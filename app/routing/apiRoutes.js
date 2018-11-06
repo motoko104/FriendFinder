@@ -1,4 +1,3 @@
-let path = require("path");
 // Setting list of friends to a variable
 let friendsList = require("../data/friends.js");
 //Export module of the routes for the api's
@@ -36,7 +35,6 @@ module.exports = function(app) {
         }
         //returns the best match generated
         let newFriend = friendsList[bestMatch];
-        console.log(newFriend);
         res.json(newFriend);
 
         //pushes the newest friend into the friends list data array
