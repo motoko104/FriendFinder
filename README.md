@@ -9,7 +9,7 @@ Tired of looking for friends and just not finding out who they are fast enough!?
 ### How to Get Started:
 Start by going here:
 
-[Friend Finder Link!](https://friend-finder-104.herokuapp.com/survey)
+[Friend Finder Link!](https://friend-finder-104.herokuapp.com/)
 
 Simply fill out the survey and see who your best match is! Simple as that!
 
